@@ -16,7 +16,7 @@ export default function TopBar({
   const { state } = useWorkspace()
 
   return (
-    <header className="flex items-center px-3 h-11 bg-surface-100 border-b border-surface-200 flex-shrink-0 z-10 gap-2">
+    <header className="flex items-center pt-5 px-3 h-11 bg-surface-100 border-b border-surface-200 flex-shrink-0 z-10 gap-2">
       {/* Left */}
       <div className="flex items-center gap-2">
         {isMobile ? (
