@@ -16,11 +16,11 @@ export default function TopBar({
   const { state } = useWorkspace()
 
   return (
-    <header className="flex items-center px-3 h-11 bg-surface-100 border-b border-surface-200 flex-shrink-0 z-10 gap-2"
-      style={{
-        paddingTop: 'env(safe-area-inset-top)',
-        minHeight: 'calc(44px + safe-area-inset-top)',
-      }}
+    <header className="sticky top-0 z-50 flex items-center px-3 bg-surface-100 border-b border-surface-200 flex-shrink-0 gap-2"
+    style={{
+      paddingTop: 'env(safe-area-inset-top)',
+      height: 'calc(44px + env(safe-area-inset-top))',
+    }}
     >
       {/* Left */}
       <div className="flex items-center gap-2">

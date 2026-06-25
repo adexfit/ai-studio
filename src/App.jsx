@@ -50,7 +50,7 @@ function Studio() {
   // ── Mobile layout ──────────────────────────────────────────────
   if (isMobile) {
     return (
-      <div className="flex flex-col h-screen overflow-hidden">
+      <div className="flex flex-col overflow-hidden" style={{ height: '100dvh' }}>
         <TopBar
           onSettings={() => setShowSettings(true)}
           isMobile
@@ -95,7 +95,7 @@ function Studio() {
 
   // ── Desktop layout ─────────────────────────────────────────────
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col overflow-hidden" style={{ height: '100dvh' }}>
       <TopBar
         onSettings={() => setShowSettings(true)}
         sidebarOpen={sidebarOpen}
